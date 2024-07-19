@@ -30,10 +30,11 @@
         librewolf = pkgs.librewolf-pkg;
         default = librewolf;
       };
-
+    })
+    // {
       overlays = rec {
         librewolf = librewolf-overlay;
         default = librewolf;
       };
-    });
+    };
 }
