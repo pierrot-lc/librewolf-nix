@@ -31,5 +31,6 @@
         librewolf = pkgs.librewolf-pkg;
         default = librewolf;
       };
+      overlay = librewolf-overlay;
     });
 }
