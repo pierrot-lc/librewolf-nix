@@ -8,14 +8,19 @@
     libName = "librewolf";
     nativeMessagingHosts = with pkgs; [bukubrow];
     extraPrefs = ''
+      defaultPref("accessibility.force_disabled", 1);
       defaultPref("browser.aboutConfig.showWarning", false);
       defaultPref("browser.shell.checkDefaultBrowser", false);
       defaultPref("browser.translations.neverTranslateLanguages", "fr");
       defaultPref("extensions.autoDisableScopes", 0);
       defaultPref("extensions.autoDisableScopes", 0);
       defaultPref("extensions.install_origins.enabled", true);
+      defaultPref("general.autoScroll", true);
       defaultPref("gfx.canvas.accelerated", true);
       defaultPref("gfx.webrender.enabled", true);
+      defaultPref("middlemouse.paste", false);
+      defaultPref("privacy.clearOnShutdown.cache", false);
+      defaultPref("privacy.clearOnShutdown.cookies", false);
       defaultPref("webgl.disabled", false);
     '';
     extraPolicies = {
