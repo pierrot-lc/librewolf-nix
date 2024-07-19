@@ -16,10 +16,9 @@
       "x86_64-linux"
       "aarch64-linux"
     ];
+    librewolf-overlay = import ./nix/overlay.nix;
   in
     flake-utils.lib.eachSystem supportedSystems (system: let
-      librewolf-overlay = import ./nix/overlay.nix;
-
       pkgs = import nixpkgs {
         inherit system;
         overlays = [
