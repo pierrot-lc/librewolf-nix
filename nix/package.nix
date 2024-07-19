@@ -24,7 +24,7 @@
       pref("middlemouse.paste", false);
       pref("privacy.clearOnShutdown.cache", false);
       pref("privacy.clearOnShutdown.cookies", false);
-      pref("privacy.resistFingerprinting.exemptedDomains", "*.twitch.tv");
+      pref("privacy.resistFingerprinting.exemptedDomains", ["*.twitch.tv"]);
       pref("webgl.disabled", false);
     '';
     extraPolicies = {
@@ -43,7 +43,7 @@
         }
         {
           "Title" = "";
-          "URL" = "https://www.twitch.tv/";
+          "URL" = "https://twitch.tv";
           "Placement" = "toolbar";
         }
         {
@@ -63,12 +63,12 @@
         }
         {
           "Title" = "";
-          "URL" = "https://web.whatsapp.com/";
+          "URL" = "https://web.whatsapp.com";
           "Placement" = "toolbar";
         }
         {
           "Title" = "";
-          "URL" = "https://github.com/";
+          "URL" = "https://github.com";
           "Placement" = "toolbar";
         }
         {
@@ -78,10 +78,22 @@
         }
         {
           "Title" = "";
+          "URL" = "https://rss.flus.fr";
+          "Placement" = "toolbar";
+        }
+        {
+          "Title" = "";
           "URL" = "https://search.nixos.org/packages";
           "Placement" = "toolbar";
         }
       ];
+
+      Cookies = {
+        Allow = [
+          "https://discord.com"
+          "https://twitch.tv"
+        ];
+      };
 
       # Extensions are obtained thanks to the guide here: https://discourse.nixos.org/t/declare-firefox-extensions-and-settings/36265.
       # Check `about:support` for extension/add-on ID strings. Then find the

@@ -4,6 +4,14 @@ I used Firefox most of the time, but most of the default settings are not
 headed toward privacy. Librewolf on the other hand have much more sane defaults
 so I might as well use librewolf.
 
+Things modified:
+
+- Bookmarks.
+- Extensions.
+- Preferences.
+- Lower some of the privacy settings on some specific sites (e.g. twitch does
+  not work by default on librewolf without disabling fingerprinting).
+
 ## Links
 
 - [Nix functions around firefox](https://ryantm.github.io/nixpkgs/builders/packages/firefox/)
