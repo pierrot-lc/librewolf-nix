@@ -7,7 +7,7 @@
     wmClass = "LibreWolf";
     libName = "librewolf";
     nativeMessagingHosts = with pkgs; [bukubrow];
-    extraPrefs = ''
+    extraPrefs = /*javascript*/ ''
       pref("accessibility.force_disabled", 1);
       pref("browser.aboutConfig.showWarning", false);
       pref("browser.bookmarks.addedImportButton", false);
@@ -16,16 +16,17 @@
       pref("browser.toolbars.bookmarks.visibility", "newtab");
       pref("browser.translations.neverTranslateLanguages", "fr");
       pref("extensions.autoDisableScopes", 0);
-      pref("extensions.autoDisableScopes", 0);
       pref("extensions.install_origins.enabled", true);
       pref("general.autoScroll", true);
       pref("gfx.canvas.accelerated", true);
       pref("gfx.webrender.enabled", true);
       pref("middlemouse.paste", false);
+      pref("webgl.disabled", false);
+
+      // Privacy relaxation.
       pref("privacy.clearOnShutdown.cache", false);
       pref("privacy.clearOnShutdown.cookies", false);
-      pref("privacy.resistFingerprinting.exemptedDomains", ["*.twitch.tv"]);
-      pref("webgl.disabled", false);
+      pref("privacy.resistFingerprinting.exemptedDomains", "*.twitch.tv,*.discord.com");
     '';
     extraPolicies = {
       # Documentation about policies options can be found at `about:policies#documentation`.
@@ -43,7 +44,7 @@
         }
         {
           "Title" = "";
-          "URL" = "https://twitch.tv";
+          "URL" = "https://www.twitch.tv";
           "Placement" = "toolbar";
         }
         {
@@ -91,7 +92,7 @@
       Cookies = {
         Allow = [
           "https://discord.com"
-          "https://twitch.tv"
+          "https://www.twitch.tv"
         ];
       };
 
