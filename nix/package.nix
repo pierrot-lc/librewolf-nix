@@ -26,7 +26,7 @@
       // Privacy relaxation.
       pref("privacy.clearOnShutdown.cache", false);
       pref("privacy.clearOnShutdown.cookies", false);
-      pref("privacy.resistFingerprinting.exemptedDomains", "*.twitch.tv,*.discord.com");
+      pref("privacy.resistFingerprinting.exemptedDomains", "*.twitch.tv,*.discord.com,*.x.com");
     '';
     extraPolicies = {
       # Documentation about policies options can be found at `about:policies#documentation`.
@@ -86,6 +86,11 @@
           "Title" = "";
           "URL" = "https://search.nixos.org/packages";
           "Placement" = "toolbar";
+        }
+        {
+          "Title" = "Nixpkgs";
+          "URL" = "https://github.com/NixOS/nixpkgs";
+          "Placement" = "menu";
         }
       ];
 
