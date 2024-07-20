@@ -7,7 +7,7 @@
     wmClass = "LibreWolf";
     libName = "librewolf";
     nativeMessagingHosts = with pkgs; [bukubrow];
-    extraPrefs = /*javascript*/ ''
+    extraPrefs = /* javascript */ ''
       pref("accessibility.force_disabled", 1);
       pref("browser.aboutConfig.showWarning", false);
       pref("browser.bookmarks.addedImportButton", false);
@@ -97,7 +97,7 @@
       Cookies = {
         Allow = [
           "https://discord.com"
-          "https://www.twitch.tv"
+          "https://www.twitch.tv/"
         ];
       };
 
