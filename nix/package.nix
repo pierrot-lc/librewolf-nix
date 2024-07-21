@@ -79,17 +79,22 @@
         }
         {
           "Title" = "";
-          "URL" = "https://rss.flus.fr";
-          "Placement" = "toolbar";
-        }
-        {
-          "Title" = "";
           "URL" = "https://search.nixos.org/packages";
           "Placement" = "toolbar";
         }
         {
           "Title" = "Nixpkgs";
           "URL" = "https://github.com/NixOS/nixpkgs";
+          "Placement" = "menu";
+        }
+        {
+          "Title" = "";
+          "URL" = "https://rss.flus.fr";
+          "Placement" = "menu";
+        }
+        {
+          "Title" = "IceDrive";
+          "URL" = "https://icedrive.net/";
           "Placement" = "menu";
         }
       ];
