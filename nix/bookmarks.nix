@@ -7,7 +7,7 @@
   prefixes = ["https://" "http://"];
   removePrefixes = url: lib.foldr (prefix: str: lib.strings.removePrefix prefix str) url prefixes;
   extractDomainName = url: lib.lists.head (lib.strings.split "/" (removePrefixes url));
-  getFavicon = url: "https://icons.duckduckgo.com/ip3/${extractDomainName url}.ico";
+  getFavicon = url: "https://www.google.com/s2/favicons?domain=${extractDomainName url}";
   addFavicon = attrset: attrset // {"Favicon" = getFavicon attrset."URL";};
 
   bookmarks = [
@@ -67,7 +67,7 @@
       "Placement" = "menu";
     }
     {
-      "Title" = "";
+      "Title" = "Flus";
       "URL" = "https://rss.flus.fr";
       "Placement" = "menu";
     }
