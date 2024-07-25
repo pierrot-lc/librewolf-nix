@@ -2,7 +2,7 @@
   pkgs,
   lib,
 }: let
-  bookmarks = import ./bookmarks.nix;
+  bookmarks = import ./bookmarks.nix {inherit lib;};
 in {
   librewolf-pkg = pkgs.wrapFirefox pkgs.librewolf-unwrapped {
     inherit (pkgs.librewolf-unwrapped) extraPrefsFiles extraPoliciesFiles;
