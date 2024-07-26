@@ -85,7 +85,7 @@
       "Folder" = "Inria";
     }
     {
-      "Title" = "Net";
+      "Title" = "Nef";
       "URL" = "https://wiki.inria.fr/ClustersSophia/Clusters_Home";
       "Placement" = "menu";
       "Folder" = "Inria";
