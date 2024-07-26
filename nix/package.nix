@@ -40,6 +40,13 @@ in {
           "https://discord.com"
           "https://wandb.ai/"
           "https://www.twitch.tv/"
+          "https://claude.ai"
+        ];
+      };
+
+      EnableTrackingProtection = {
+        Exceptions = [
+          "https://claude.ai"
         ];
       };
 
