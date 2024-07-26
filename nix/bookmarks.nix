@@ -76,6 +76,20 @@
       "URL" = "https://icedrive.net/";
       "Placement" = "menu";
     }
+
+    # Inria bookmarks.
+    {
+      "Title" = "Zimbra";
+      "URL" = "https://zimbra.inria.fr";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
+      "Title" = "Net";
+      "URL" = "https://wiki.inria.fr/ClustersSophia/Clusters_Home";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
   ];
 in
   builtins.map addFavicon bookmarks
