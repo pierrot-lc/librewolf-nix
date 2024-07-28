@@ -10,6 +10,7 @@ in {
     wmClass = "LibreWolf";
     libName = "librewolf";
     nativeMessagingHosts = with pkgs; [bukubrow];
+    # Extra prefs can be found at `about:config`.
     extraPrefs = /* javascript */ ''
         pref("accessibility.force_disabled", 1);
         pref("browser.aboutConfig.showWarning", false);
@@ -29,6 +30,8 @@ in {
         // Privacy relaxation.
         pref("privacy.clearOnShutdown.cache", false);
         pref("privacy.clearOnShutdown.cookies", false);
+        pref("privacy.clearOnShutdown.history", false);
+        pref("privacy.clearOnShutdown.sessions", false);
         pref("privacy.resistFingerprinting.exemptedDomains", "*.discord.com,*.twitch.tv,*.wandb.ai,*.x.com");
       '';
 
