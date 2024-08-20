@@ -95,6 +95,18 @@
       "Placement" = "menu";
       "Folder" = "Inria";
     }
+    {
+      "Title" = "Monika Nef";
+      "URL" = "https://nef-frontal.inria.fr/monika";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
+      "Title" = "Ganglia Nef";
+      "URL" = "https://nef-services.inria.fr/ganglia/";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
   ];
 in
   builtins.map addFavicon bookmarks
