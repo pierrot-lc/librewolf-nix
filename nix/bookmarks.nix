@@ -57,16 +57,6 @@
       "Placement" = "toolbar";
     }
     {
-      "Title" = "";
-      "URL" = "https://search.nixos.org/packages";
-      "Placement" = "toolbar";
-    }
-    {
-      "Title" = "";
-      "URL" = "https://scholar.google.com/";
-      "Placement" = "toolbar";
-    }
-    {
       "Title" = "Nixpkgs";
       "URL" = "https://github.com/NixOS/nixpkgs";
       "Placement" = "menu";
