@@ -32,7 +32,7 @@ in {
         pref("privacy.clearOnShutdown.cookies", false);
         pref("privacy.clearOnShutdown.history", false);
         pref("privacy.clearOnShutdown.sessions", false);
-        pref("privacy.resistFingerprinting.exemptedDomains", "*.discord.com,*.twitch.tv,*.wandb.ai,*.x.com");
+        pref("privacy.resistFingerprinting.exemptedDomains", "*.twitch.tv,*.claude.ai");
       '';
 
     # Documentation about policies options can be found at `about:policies#documentation`.
@@ -43,17 +43,13 @@ in {
 
       Cookies = {
         Allow = [
-          "https://claude.ai"
           "https://discord.com"
-          "https://wandb.ai/"
           "https://web.whatsapp.com/"
-          "https://www.twitch.tv/"
         ];
       };
 
       EnableTrackingProtection = {
         Exceptions = [
-          "https://claude.ai"
         ];
       };
     };
