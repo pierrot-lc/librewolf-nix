@@ -1,3 +1,5 @@
+![Librewolf Icon](./.icon.svg)
+
 # My Librewolf Derivation
 
 I used Firefox most of the time, but most of the default settings are not
@@ -11,6 +13,12 @@ Things modified:
 - Preferences.
 - Lower some of the privacy settings on some specific sites (e.g. twitch does
   not work by default on librewolf without disabling fingerprinting).
+
+## TODO
+
+- Manage search engines. It looks like it should be done by modifying the
+  `search.json.mozlz4` file, which is quite cumbersome. This is how HM is
+  doing.
 
 ## Links
 
