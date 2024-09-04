@@ -7,7 +7,7 @@
   prefixes = ["https://" "http://"];
   removePrefixes = url: lib.foldr (prefix: str: lib.strings.removePrefix prefix str) url prefixes;
   extractDomainName = url: lib.lists.head (lib.strings.split "/" (removePrefixes url));
-  getFavicon = url: "https://www.google.com/s2/favicons?domain=${extractDomainName url}";
+  getFavicon = url: "https://icon.horse/icon/${extractDomainName url}"; # See https://icon.horse/.
   addFavicon = attrset: attrset // {"Favicon" = getFavicon attrset."URL";};
 
   bookmarks = [
