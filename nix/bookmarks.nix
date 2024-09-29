@@ -71,6 +71,11 @@
       "URL" = "https://icedrive.net/";
       "Placement" = "menu";
     }
+    {
+      "Title" = "Daily Papers";
+      "URL" = "https://huggingface.co/papers";
+      "Placement" = "menu";
+    }
 
     # Inria bookmarks.
     {
