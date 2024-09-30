@@ -72,6 +72,11 @@
       "Placement" = "menu";
     }
     {
+      "Title" = "Excalidraw";
+      "URL" = "https://excalidraw.com/";
+      "Placement" = "menu";
+    }
+    {
       "Title" = "Daily Papers";
       "URL" = "https://huggingface.co/papers";
       "Placement" = "menu";
