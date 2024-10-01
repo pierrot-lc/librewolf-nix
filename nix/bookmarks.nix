@@ -107,6 +107,12 @@
       "Placement" = "menu";
       "Folder" = "Inria";
     }
+    {
+      "Title" = "Print";
+      "URL" = "https://print.inria.fr";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
   ];
 in
   builtins.map addFavicon bookmarks
