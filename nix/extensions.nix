@@ -14,6 +14,11 @@
     install_url = "https://addons.mozilla.org/firefox/downloads/file/4262820/canvasblocker-latest.xpi";
     installation_mode = "force_installed";
   };
+  # Defund Wikipedia
+  "{9d6e7f41-8d33-4145-a164-5ca4358c7960}" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/file/3617936/defund_wikipedia-1.2.xpi";
+    installation_mode = "force_installed";
+  };
   # Fakespot
   "{44df5123-f715-9146-bfaa-c6e8d4461d44}" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/file/4312344/fakespot_fake_reviews_amazon-latest.xpi";
