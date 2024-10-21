@@ -113,6 +113,12 @@
       "Placement" = "menu";
       "Folder" = "Inria";
     }
+    {
+      "Title" = "Moodle";
+      "URL" = "https://lms.univ-cotedazur.fr";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
   ];
 in
   builtins.map addFavicon bookmarks
