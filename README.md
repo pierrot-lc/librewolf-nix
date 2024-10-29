@@ -14,6 +14,111 @@ Things modified:
 - Lower some of the privacy settings on some specific sites (e.g. twitch does
   not work by default on librewolf without disabling fingerprinting).
 
+## Installation
+
+### Test Drive
+
+You can directly try the package by running:
+
+```console
+nix run "github:pierrot-lc/librewolf-nix"
+```
+
+### Using the Overlay
+
+The overlay will populate your list of available packages with the additional
+`librewolf-nix` package (with the default configuration). Here's a minimal
+example:
+
+```nix
+# flake.nix
+{
+  inputs = {
+    nixpkgs.url = "nixpkgs/nixos-unstable";
+    librewolf-nix = {
+      url = "github:pierrot-lc/librewolf-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = {
+    self,
+    nixpkgs,
+    librewolf-nix,
+    ...
+  }: let
+    system = "x86_64-linux";
+    lib = nixpkgs.lib;
+    pkgs = import nixpkgs {
+      inherit system;
+      overlays = [
+          librewolf-nix.overlays.${system}.default;
+      ];
+    };
+  in {
+    # The package is available at `pkgs.librewolf-nix`.
+    ...
+  };
+}
+```
+
+### Using the Module
+
+The module is useful to specify your own configuration of the package:
+
+```nix
+# flake.nix
+{
+  inputs = {
+    nixpkgs.url = "nixpkgs/nixos-unstable";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    librewolf-nix = {
+      url = "github:pierrot-lc/librewolf-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = {
+    self,
+    nixpkgs,
+    librewolf-nix,
+    ...
+  }: let
+    system = "x86_64-linux";
+    lib = nixpkgs.lib;
+    pkgs = import nixpkgs {
+      inherit system;
+    };
+  in {
+    homeConfigurations = {
+      username = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [
+          ./home.nix
+          inputs.librewolf-nix.hmModules.${system}.default
+        ];
+      };
+    };
+  };
+}
+```
+
+```nix
+# home.nix
+{pkgs, ...}: {
+  librewolf-nix = {
+    enable = true;
+    nativeMessagingHosts = with pkgs; [bukubrow];
+  };
+}
+```
+You can find the list of available options in `./nix/module.nix`.
+
 ## TODO
 
 - Manage search engines. It looks like it should be done by modifying the
