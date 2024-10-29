@@ -24,6 +24,6 @@ in {
   };
 
   config = lib.mkIf config.librewolf-nix.enable {
-    home.packages = [package.librewolf-pkgs];
+    home.packages = [package.librewolf-pkg];
   };
 }
