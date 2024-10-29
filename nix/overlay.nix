@@ -4,5 +4,5 @@ final: prev: let
     lib = final.lib;
   };
 in {
-  librewolf-pkg = package.librewolf-pkg;
+  librewolf-nix = package.librewolf-nix;
 }

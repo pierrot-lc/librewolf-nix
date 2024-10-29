@@ -6,7 +6,7 @@
   bookmarks = import ./bookmarks.nix {inherit lib;};
   extensions = import ./extensions.nix;
 in {
-  librewolf-pkg = pkgs.wrapFirefox pkgs.librewolf-unwrapped {
+  librewolf-nix = pkgs.wrapFirefox pkgs.librewolf-unwrapped {
     inherit (pkgs.librewolf-unwrapped) extraPrefsFiles extraPoliciesFiles;
     wmClass = "LibreWolf";
     libName = "librewolf";

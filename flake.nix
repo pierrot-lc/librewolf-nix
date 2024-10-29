@@ -28,7 +28,7 @@
       };
     in {
       packages = rec {
-        librewolf = pkgs.librewolf-pkg;
+        librewolf = pkgs.librewolf-nix;
         default = librewolf;
       };
 
