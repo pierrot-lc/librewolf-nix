@@ -7,7 +7,7 @@
   package = import ./package.nix {
     inherit pkgs;
     inherit lib;
-    inherit (config) nativeMessagingHosts;
+    inherit (config.librewolf-nix) nativeMessagingHosts;
   };
 in {
   options = {
