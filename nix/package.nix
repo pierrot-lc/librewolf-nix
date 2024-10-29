@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  nativeMessagingHosts ? with pkgs; [],
 }: let
   bookmarks = import ./bookmarks.nix {inherit lib;};
   extensions = import ./extensions.nix;
@@ -9,7 +10,7 @@ in {
     inherit (pkgs.librewolf-unwrapped) extraPrefsFiles extraPoliciesFiles;
     wmClass = "LibreWolf";
     libName = "librewolf";
-    nativeMessagingHosts = with pkgs; [bukubrow];
+    inherit nativeMessagingHosts;
     # Extra prefs can be found at `about:config`.
     extraPrefs = /* javascript */ ''
         pref("accessibility.force_disabled", 1);

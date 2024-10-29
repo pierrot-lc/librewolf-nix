@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = inputs @ {
+  outputs = {
     self,
     nixpkgs,
     flake-utils,
@@ -17,6 +17,7 @@
       "aarch64-linux"
     ];
     librewolf-overlay = import ./nix/overlay.nix;
+    librewolf-module = import ./nix/module.nix;
   in
     flake-utils.lib.eachSystem supportedSystems (system: let
       pkgs = import nixpkgs {
@@ -30,11 +31,15 @@
         librewolf = pkgs.librewolf-pkg;
         default = librewolf;
       };
-    })
-    // {
+
       overlays = rec {
         librewolf = librewolf-overlay;
         default = librewolf;
       };
-    };
+
+      hmModules = rec {
+        librewolf = librewolf-module;
+        default = librewolf;
+      };
+    });
 }
