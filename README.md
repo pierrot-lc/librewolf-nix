@@ -2,17 +2,26 @@
 
 # My Librewolf Derivation
 
-I used Firefox most of the time, but most of the default settings are not
-headed toward privacy. Librewolf on the other hand have much more sane defaults
-so I might as well use librewolf.
+This is my own librewolf configuration implemented as a flake.
 
-Things modified:
+*Why librewolf instead of firefox?*
+
+I got frustrated with Firefox. The default settings are not always configured
+with the user privacy or user experience in mind. Librewolf on the other hand
+have much more sane defaults so I might as well use librewolf.
+
+This flake configures the followings:
 
 - Bookmarks.
 - Extensions.
 - Preferences.
-- Lower some of the privacy settings on some specific sites (e.g. twitch does
+- Lowers some of the privacy settings on some specific sites (e.g. twitch does
   not work by default on librewolf without disabling fingerprinting).
+
+If you'd like to build your own derivation of firefox or librewolf, feel free
+to take inspiration from this repository. Swapping librewolf for firefox only
+requires you to change `pkgs.librewolf-unwrapped` with `pkgs.firefox-unwrapped`
+in `./nix/package.nix`.
 
 ## Installation
 
