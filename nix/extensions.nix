@@ -4,11 +4,6 @@
 # directly). Always install the latest version of the extensions by using the
 # "latest" tag in the download url.
 {
-  # Bukubrow
-  "bukubrow@samhh.com" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/file/3769984/bukubrow-latest.xpi";
-    installation_mode = "force_installed";
-  };
   # Canvas Blocker
   "CanvasBlocker@kkapsner.de" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/file/4262820/canvasblocker-latest.xpi";
