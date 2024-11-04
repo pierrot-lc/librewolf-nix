@@ -57,6 +57,11 @@
       "Placement" = "toolbar";
     }
     {
+      "Title" = "";
+      "URL" = "https://rss.flus.fr/";
+      "Placement" = "toolbar";
+    }
+    {
       "Title" = "Nixpkgs";
       "URL" = "https://github.com/NixOS/nixpkgs";
       "Placement" = "menu";
