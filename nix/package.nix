@@ -6,9 +6,21 @@
 }: let
   bookmarks = import ./bookmarks.nix {inherit lib;};
   extensions = import ./extensions.nix // extraExtensions;
+  search = import ./search.nix;
+  searchJson = builtins.toJSON search;
+
+  librewolf-unwrapped = pkgs.librewolf-unwrapped.overrideAttrs (oldAttrs: {
+    nativeBuildInputs = oldAttrs.nativeBuildInputs ++ [pkgs.mozlz4a];
+    fixupPhase = /* bash */ ''
+      echo "Building default search engines"
+      echo "${searchJson}" > search.json
+      mozlz4a search.json > search.json.mozlz4
+      mv search.json.mozlz4 "$out/lib/librewolf/defaults/search.json.mozlz4"
+    '';
+  });
 in {
-  librewolf-nix = pkgs.wrapFirefox pkgs.librewolf-unwrapped {
-    inherit (pkgs.librewolf-unwrapped) extraPrefsFiles extraPoliciesFiles;
+  librewolf-nix = pkgs.wrapFirefox librewolf-unwrapped {
+    inherit (librewolf-unwrapped) extraPrefsFiles extraPoliciesFiles;
     wmClass = "LibreWolf";
     libName = "librewolf";
     inherit nativeMessagingHosts;
