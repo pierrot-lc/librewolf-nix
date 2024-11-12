@@ -132,7 +132,7 @@ You can find the list of available options in `./nix/module.nix`.
 
 - Manage search engines. It looks like it should be done by modifying the
   `search.json.mozlz4` file, which is quite cumbersome. This is how HM is
-  doing.
+  [doing](https://github.com/nix-community/home-manager/blob/60bb110917844d354f3c18e05450606a435d2d10/modules/programs/firefox/profiles/search.nix#L127).
 
 ## Links
 
