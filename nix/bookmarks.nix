@@ -124,6 +124,12 @@
       "Placement" = "menu";
       "Folder" = "Inria";
     }
+    {
+      "Title" = "Mattermost";
+      "URL" = "https://mattermost.inria.fr/coati/channels/off-topic";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
   ];
 in
   builtins.map addFavicon bookmarks
