@@ -130,6 +130,12 @@
       "Placement" = "menu";
       "Folder" = "Inria";
     }
+    {
+      "Title" = "BBB";
+      "URL" = "https://webinaire.numerique.gouv.fr/welcome";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
   ];
 in
   builtins.map addFavicon bookmarks
