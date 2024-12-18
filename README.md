@@ -141,3 +141,4 @@ You can find the list of available options in `./nix/module.nix`.
 - [Firefox nix wrapper definition](https://github.com/NixOS/nixpkgs/blob/nixos-24.05/pkgs/applications/networking/browsers/firefox/wrapper.nix)
 - [Librewolf common settings](https://librewolf.net/docs/settings/)
 - [Some good firefox configuration example](https://github.com/chayleaf/dotfiles/blob/543611983cd66449378ada55e33d6d0bff7a6e55/home/modules/firefox.nix#L8)
+- [Firefox source code](https://searchfox.org/mozilla-central/source)
