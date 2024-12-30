@@ -89,6 +89,12 @@
 
     # Inria bookmarks.
     {
+      "Title" = "Numin";
+      "URL" = "https://numin.inria.fr/portal/login";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Zimbra";
       "URL" = "https://zimbra.inria.fr";
       "Placement" = "menu";
