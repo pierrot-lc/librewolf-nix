@@ -53,6 +53,11 @@
     }
     {
       "Title" = "";
+      "URL" = "https://www.perplexity.ai/";
+      "Placement" = "toolbar";
+    }
+    {
+      "Title" = "";
       "URL" = "https://wandb.ai";
       "Placement" = "toolbar";
     }
