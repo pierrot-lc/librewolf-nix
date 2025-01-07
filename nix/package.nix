@@ -30,10 +30,10 @@ in {
         pref("webgl.disabled", false);
 
         // Privacy relaxation.
-        pref("privacy.clearOnShutdown.cache", false);
-        pref("privacy.clearOnShutdown.cookies", false);
-        pref("privacy.clearOnShutdown.history", false);
-        pref("privacy.clearOnShutdown.sessions", false);
+        pref("privacy.clearOnShutdown_v2.cache", false);
+        pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false);
+        pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
+        pref("privacy.clearOnShutdown_v2.siteSettings", false)
         pref("privacy.resistFingerprinting.exemptedDomains", "*.twitch.tv,*.claude.ai");
       '';
 
