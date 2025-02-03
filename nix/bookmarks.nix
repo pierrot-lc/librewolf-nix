@@ -112,6 +112,12 @@
       "Folder" = "Inria";
     }
     {
+      "Title" = "Nef - Wiki";
+      "URL" = "https://wiki.inria.fr/ClustersSophia/FAQ_new_config";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Monika Nef";
       "URL" = "https://nef-frontal.inria.fr/monika";
       "Placement" = "menu";
