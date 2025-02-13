@@ -130,6 +130,12 @@
       "Folder" = "Inria";
     }
     {
+      "Title" = "Grid5000";
+      "URL" = "https://www.grid5000.fr/w/Grid5000:Home";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Print";
       "URL" = "https://print.inria.fr";
       "Placement" = "menu";
