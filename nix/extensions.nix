@@ -24,11 +24,6 @@
     install_url = "https://addons.mozilla.org/firefox/downloads/file/3990496/get_rss_feed_url-latest.xpi";
     installation_mode = "force_installed";
   };
-  # Minimal Twitter
-  "{e7476172-097c-4b77-b56e-f56a894adca9}" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/file/4188531/minimaltwitter-latest.xpi";
-    installation_mode = "force_installed";
-  };
   # Privacy Badger
   "jid1-MnnxcxisBPnSXQ@jetpack" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/file/4321653/privacy_badger17-latest.xpi";
