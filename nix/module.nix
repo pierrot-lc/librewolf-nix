@@ -27,9 +27,9 @@ in {
           librewolf-nix = {
             enable = true;
             extraExtensions = {
-              # Bukubrow
-              "bukubrow@samhh.com" = {
-                install_url = "https://addons.mozilla.org/firefox/downloads/file/3769984/bukubrow-latest.xpi";
+              # Canvas Blocker
+              "CanvasBlocker@kkapsner.de" = {
+                install_url = "https://addons.mozilla.org/firefox/downloads/file/4262820/canvasblocker-latest.xpi";
                 installation_mode = "force_installed";
               };
             };
@@ -39,9 +39,26 @@ in {
       };
       nativeMessagingHosts = lib.mkOption {
         type = lib.types.listOf lib.types.package;
-        default = with pkgs; [];
+        default = [];
         description = ''
-          Additional packages containing native messaging hosts that should be made available to Firefox extensions.
+          Additional packages containing native messaging hosts that should be
+          made available to Firefox extensions.
+
+          Example:
+
+          ```nix
+          librewolf-nix = {
+            enable = true;
+            extraExtensions = {
+              # Bukubrow
+              "bukubrow@samhh.com" = {
+                install_url = "https://addons.mozilla.org/firefox/downloads/file/3769984/bukubrow-latest.xpi";
+                installation_mode = "force_installed";
+              };
+            };
+            nativeMessagingHosts = with pkgs; [bukubrow];
+          };
+          ```
         '';
       };
     };
