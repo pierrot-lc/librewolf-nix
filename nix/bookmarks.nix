@@ -6,7 +6,7 @@
   # use it to get the corresponding favicon with the API service.
   prefixes = ["https://" "http://"];
   removePrefixes = url: lib.foldr (prefix: str: lib.strings.removePrefix prefix str) url prefixes;
-  extractDomainName = url: lib.lists.head (lib.strings.split "/" (removePrefixes url));
+  extractDomainName = url: url |> removePrefixes |> lib.strings.split "/" |> lib.lists.head;
   getFavicon = url: "https://icon.horse/icon/${extractDomainName url}"; # See https://icon.horse/.
   addFavicon = attrset: attrset // {"Favicon" = getFavicon attrset."URL";};
 
