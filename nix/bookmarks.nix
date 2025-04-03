@@ -141,6 +141,12 @@
       "Folder" = "Inria";
     }
     {
+      "Title" = "Grid5000 Getting Started";
+      "URL" = "https://www.grid5000.fr/w/Production:Getting_Started";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Print";
       "URL" = "https://print.inria.fr";
       "Placement" = "menu";
