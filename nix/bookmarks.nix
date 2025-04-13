@@ -147,6 +147,12 @@
       "Folder" = "Inria";
     }
     {
+      "Title" = "Grid5000 Oarsub Aliases";
+      "URL" = "https://www.grid5000.fr/w/Generated/OarsubSimplifierAliases";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Print";
       "URL" = "https://print.inria.fr";
       "Placement" = "menu";
