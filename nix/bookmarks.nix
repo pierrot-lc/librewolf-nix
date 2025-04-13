@@ -153,6 +153,12 @@
       "Folder" = "Inria";
     }
     {
+      "Title" = "Grid5000 GPUs Guide";
+      "URL" = "https://www.grid5000.fr/w/GPUs_on_Grid5000";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Print";
       "URL" = "https://print.inria.fr";
       "Placement" = "menu";
