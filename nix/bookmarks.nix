@@ -141,6 +141,12 @@
       "Folder" = "Inria";
     }
     {
+      "Title" = "Grid5000 Account";
+      "URL" = "https://api.grid5000.fr/stable/users/";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Grid5000 Getting Started";
       "URL" = "https://www.grid5000.fr/w/Production:Getting_Started";
       "Placement" = "menu";
