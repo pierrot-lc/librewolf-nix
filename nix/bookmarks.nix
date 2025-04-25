@@ -117,6 +117,12 @@
       "Folder" = "Inria";
     }
     {
+      "Title" = "Agate Tempo";
+      "URL" = "https://agate-tempo.cnrs.fr/fr/";
+      "Placement" = "menu";
+      "Folder" = "Inria";
+    }
+    {
       "Title" = "Nef - Wiki";
       "URL" = "https://wiki.inria.fr/ClustersSophia/FAQ_new_config";
       "Placement" = "menu";
