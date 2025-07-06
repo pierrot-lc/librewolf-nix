@@ -11,12 +11,17 @@
   };
   # Defund Wikipedia
   "{9d6e7f41-8d33-4145-a164-5ca4358c7960}" = {
-    install_url = "https://addons.mozilla.org/firefox/downloads/file/3617936/defund_wikipedia-1.2.xpi";
+    install_url = "https://addons.mozilla.org/firefox/downloads/file/3617936/defund_wikipedia-latest.xpi";
     installation_mode = "force_installed";
   };
   # Get RSS Feed URL
   "{15bdb1ce-fa9d-4a00-b859-66c214263ac0}" = {
     install_url = "https://addons.mozilla.org/firefox/downloads/file/3990496/get_rss_feed_url-latest.xpi";
+    installation_mode = "force_installed";
+  };
+  # Nixpkgs PR Tracker
+  "nixpkgs-pr-tracker@tahayassine.me" = {
+    instrall_url = "https://addons.mozilla.org/firefox/downloads/file/4526315/nixpkgs_pr_tracker-latest.xpi";
     installation_mode = "force_installed";
   };
   # Privacy Badger
