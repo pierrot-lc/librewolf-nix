@@ -21,6 +21,7 @@ in {
         pref("browser.shell.checkDefaultBrowser", false);
         pref("browser.toolbars.bookmarks.visibility", "newtab");
         pref("browser.translations.neverTranslateLanguages", "fr");
+        pref("dom.text_fragments.create_text_fragment.enabled", true);
         pref("extensions.autoDisableScopes", 0);
         pref("extensions.install_origins.enabled", true);
         pref("general.autoScroll", true);
