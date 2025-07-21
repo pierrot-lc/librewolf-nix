@@ -96,6 +96,11 @@
       "URL" = "https://huggingface.co/papers";
       "Placement" = "menu";
     }
+    {
+      "Title" = "ParcAzur";
+      "URL" = "https://www.lignesdazur.com/parc-relais";
+      "Placement" = "menu";
+    }
 
     # Inria bookmarks.
     {
