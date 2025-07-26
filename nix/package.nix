@@ -4,7 +4,7 @@
   nativeMessagingHosts ? with pkgs; [],
   extraExtensions ? {},
 }: let
-  bookmarks = import ./bookmarks.nix {inherit lib;};
+  bookmarks = import ./bookmarks.nix;
   extensions = import ./extensions.nix // extraExtensions;
 in {
   librewolf-nix = pkgs.wrapFirefox pkgs.librewolf-unwrapped {
