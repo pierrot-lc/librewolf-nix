@@ -49,4 +49,10 @@
     installation_mode = "force_installed";
     default_area = "navbar";
   };
+
+  # French dictionary.
+  "fr-dicollecte@dictionaries.addons.mozilla.org" = {
+    install_url = "https://addons.mozilla.org/firefox/downloads/file/3581786/dictionnaire_francais1-latest.xpi";
+    installation_mode = "force_installed";
+  };
 }
