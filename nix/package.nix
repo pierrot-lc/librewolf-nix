@@ -19,7 +19,8 @@ in {
         pref("browser.bookmarks.addedImportButton", false);
         pref("browser.migrate.bookmarks-file.enabled", false);
         pref("browser.shell.checkDefaultBrowser", false);
-        pref("browser.tabs.insertAfterCurrent", true);
+        pref("browser.tabs.insertAfterCurrent", false);
+        pref("browser.tabs.insertRelatedAfterCurrent", true);
         pref("browser.toolbars.bookmarks.visibility", "newtab");
         pref("browser.translations.neverTranslateLanguages", "fr");
         pref("dom.text_fragments.create_text_fragment.enabled", true);
