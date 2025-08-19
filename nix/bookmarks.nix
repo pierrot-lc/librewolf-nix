@@ -184,6 +184,12 @@
     "Folder" = "Inria";
   }
   {
+    "Title" = "Overleaf Irisa";
+    "URL" = "https://overleaf.irisa.fr";
+    "Placement" = "menu";
+    "Folder" = "Inria";
+  }
+  {
     "Title" = "BBB";
     "URL" = "https://webinaire.numerique.gouv.fr/welcome";
     "Placement" = "menu";
