@@ -48,12 +48,7 @@
   }
   {
     "Title" = "";
-    "URL" = "https://chat.mistral.ai/chat";
-    "Placement" = "toolbar";
-  }
-  {
-    "Title" = "";
-    "URL" = "https://www.perplexity.ai/";
+    "URL" = "https://gemini.google.com/";
     "Placement" = "toolbar";
   }
   {
