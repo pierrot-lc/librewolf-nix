@@ -37,7 +37,9 @@ in {
         pref("privacy.clearOnShutdown_v2.cookiesAndStorage", false);
         pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", false);
         pref("privacy.clearOnShutdown_v2.siteSettings", false)
-        pref("privacy.resistFingerprinting.exemptedDomains", "*.twitch.tv,*.claude.ai,*.google.com,*.youtube.com");
+        pref("privacy.resistFingerprinting", false);
+        pref("privacy.fingerprintingProtection", true);
+        pref("privacy.fingerprintingProtection.overrides", "+allTargets,-CSSPrefersColorScheme,-JSDateTimeUTC");
       '';
 
     # Documentation about policies options can be found at `about:policies#documentation`.
